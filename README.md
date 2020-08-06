@@ -12,8 +12,8 @@ install.packages("remotes")
 
 ### Installation
 
-esaRmisc is only available through Github.
+esaRmisc is only available as a private GitHub repo.
 
 ```
-remotes::install_github("fishsciences/esaRmisc")
+remotes::install_github("EnvironmentalScienceAssociates/esaRmisc", auth_token = "54054288e5fcef5ddcf768aa770d3e7463e02366")
 ```

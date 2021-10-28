@@ -1,6 +1,6 @@
 # esaRmisc
 
-R package with miscellaneous convenience functions used in projects at ESA.
+R package with miscellaneous convenience functions used in projects at [ESA](https://esassoc.com/).
 
 ### Prerequisites
 
@@ -12,7 +12,7 @@ install.packages("remotes")
 
 ### Installation
 
-esaRmisc is only available as a private GitHub repo.
+`esaRmisc` is only available through GitHub.
 
 ```
 remotes::install_github("EnvironmentalScienceAssociates/esaRmisc")

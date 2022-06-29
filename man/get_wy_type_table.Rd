@@ -7,7 +7,7 @@
 get_wy_type_table()
 }
 \description{
-Get table of water year classifications from \href{https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST}{CDEC}
+Get table of Water Year Hydrologic Classification Indices from \href{https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST}{CDEC}.
 }
 \seealso{
 \link{get_water_year_type}, \link{water_year_type}

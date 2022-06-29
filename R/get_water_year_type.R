@@ -1,11 +1,12 @@
 #' Water year classifications
 #'
-#' Get water year classifications
+#' Get water year classifications from `water_year_type` dataframe
 #'
 #' @md
 #' @param  water_year  numeric vector of water years
 #' @param  valley      Sacramento or San Joaquin valley (options: SAC or SJR)
 #'
+#' @seealso [get_wy_type_table], [water_year_type]
 #' @export
 #' @examples
 #' get_water_year_type(1900:1906)

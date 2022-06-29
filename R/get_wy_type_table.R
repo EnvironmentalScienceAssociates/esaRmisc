@@ -1,6 +1,6 @@
 #' Water year classifications
 #'
-#' Get table of water year classifications from [CDEC](https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST)
+#' Get table of Water Year Hydrologic Classification Indices from [CDEC](https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST).
 #'
 #' @md
 #' @seealso [get_water_year_type], [water_year_type]

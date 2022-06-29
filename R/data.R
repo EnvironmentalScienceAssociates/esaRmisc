@@ -1,7 +1,8 @@
 #' Water year type
 #'
-#' Water year classifications for the Sacramento and San Joaquin valleys from http://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST.
+#' Water year classifications for the Sacramento and San Joaquin valleys from [CDEC](http://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST).
 #'
+#' @md
 #' @format A data frame with 4 columns:
 #' \describe{
 #'   \item{WaterYear}{1901-present}
@@ -11,4 +12,3 @@
 #' }
 #'
 "water_year_type"
-

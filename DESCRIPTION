@@ -7,6 +7,6 @@ Maintainer: Travis Hinkelman <thinkelman@esassoc.com>
 Description: Miscellaneous Convenience Functions
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)

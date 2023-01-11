@@ -1,4 +1,6 @@
-# esaRmisc
+[![esaRmisc status badge](https://environmentalscienceassociates.r-universe.dev/badges/esaRmisc)](https://environmentalscienceassociates.r-universe.dev)
+
+## esaRmisc
 
 R package with miscellaneous convenience functions used in projects at [ESA](https://esassoc.com/).
 

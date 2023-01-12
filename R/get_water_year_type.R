@@ -15,6 +15,7 @@
 
 get_water_year_type <- function(water_year, valley = c("SAC", "SJR")){
   valley <- match.arg(valley)
-  tmp <- water_year_type[water_year_type$Valley == valley, ]
-  tmp$WaterYearType[match(water_year, tmp$WaterYear)]
+  d <- esaRmisc::water_year_type
+  dsub <- d[d$Valley == valley, ]
+  dsub$WaterYearType[match(water_year, dsub$WaterYear)]
 }

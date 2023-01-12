@@ -12,11 +12,11 @@ get_wy_type_table <- function(){
   start = (which(grepl("------", raw$lines))[1] + 5)
   end = as.numeric(format(Sys.Date(), "%Y")) - 1901
 
-  page <- read.delim(file = 'https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST',
-                     skip = start,
-                     nrows = end,
-                     sep = "",
-                     header = FALSE)
+  page <- utils::read.delim(file = 'https://cdec.water.ca.gov/reportapp/javareports?name=WSIHIST',
+                            skip = start,
+                            nrows = end,
+                            sep = "",
+                            header = FALSE)
 
   cn <- c("WaterYear", "OctMar", "AprJul", "WYSum", "Index", "WYT")
 

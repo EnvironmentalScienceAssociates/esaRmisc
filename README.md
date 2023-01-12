@@ -6,16 +6,23 @@ R package with miscellaneous convenience functions used in projects at [ESA](htt
 
 ### Installation
 
-`esaRmisc` is available through R-universe
+Enable repository.
 
 ```
-install.packages("esaRmisc", repos = "https://environmentalscienceassociates.r-universe.dev")
+options(repos = c(ESA = 'https://environmentalscienceassociates.r-universe.dev',
+                  CRAN = 'https://cloud.r-project.org'))
 ```
 
-and GitHub.
+Download and install `esaRmisc` in R.
 
 ```
-remotes::install_github("EnvironmentalScienceAssociates/esaRmisc")
+install.packages('esaRmisc')
+```
+
+Browse the `esaRmisc` manual pages.
+
+```
+help(package = 'esaRmisc')
 ```
 
 

@@ -13,6 +13,8 @@
 #'
 
 wy_yday <- function(x){
+  if (any(is.numeric(x))) stop("x must be date-time object or character string in unambiguous format")
+
   is_leap_year <- function(year){
     year %% 400 == 0 | (year %% 4 == 0 & year %% 100 != 0)
   }

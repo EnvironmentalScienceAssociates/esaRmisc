@@ -1,7 +1,7 @@
 Package: esaRmisc
 Type: Package
 Title: ESA Miscellaneous Convenience Functions
-Version: 0.1.2
+Version: 0.1.3
 Author: Travis Hinkelman, Taylor Spaulding
 Maintainer: Travis Hinkelman <thinkelman@esassoc.com>
 Description: Miscellaneous convenience functions used at ESA.

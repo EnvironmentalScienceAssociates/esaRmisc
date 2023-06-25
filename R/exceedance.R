@@ -35,7 +35,7 @@ exceedance_prob <- function(flow){
 
 exceedance_flow <- function(flow, prob){
   p = exceedance_prob(flow)
-  df1 = data.frame(flow = x, prob = p, p_diff = abs(p - prob))
+  df1 = data.frame(flow = flow, prob = p, p_diff = abs(p - prob))
   df2 = unique(df1[order(df1$p_diff),])
   # first two rows of df2 are used for interpolation
   df2$flow[1] + (df2$flow[2] - df2$flow[1])/(df2$prob[2] - df2$prob[1]) * (prob - df2$prob[1])

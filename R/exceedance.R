@@ -22,22 +22,22 @@ exceedance_prob <- function(flow){
 
 #' Exceedance Flow
 #'
-#' Calculate flow value that meets a given exceedance probability
+#' Calculate flow value that meet a vector of exceedance probabilities
 #'
 #' @md
 #' @param flow     Flow time series
-#' @param prob     Exceedance probability
+#' @param probs    Exceedance probabilities
 #'
 #' @export
 #' @examples
-#' exceedance_flow(runif(30, 0, 10000), 0.5)
+#' exceedance_flow(runif(30, 0, 10000), seq(0.1, 0.9, 0.1))
 #'
 
-exceedance_flow <- function(flow, prob){
+exceedance_flow <- function(flow, probs){
   p = exceedance_prob(flow)
-  df1 = data.frame(flow = flow, prob = p, p_diff = abs(p - prob))
-  df2 = unique(df1[order(df1$p_diff),])
-  # first two rows of df2 are used for interpolation
-  df2$flow[1] + (df2$flow[2] - df2$flow[1])/(df2$prob[2] - df2$prob[1]) * (prob - df2$prob[1])
+  df1 = unique(data.frame(flow = flow, prob = p))
+  df2 = df1[order(df1$prob),]
+  fn = approxfun(x = df2$prob, y = df2$flow)
+  fn(probs)
 }
 

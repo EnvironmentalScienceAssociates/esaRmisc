@@ -4,17 +4,17 @@
 \alias{exceedance_flow}
 \title{Exceedance Flow}
 \usage{
-exceedance_flow(flow, prob)
+exceedance_flow(flow, probs)
 }
 \arguments{
 \item{flow}{Flow time series}
 
-\item{prob}{Exceedance probability}
+\item{probs}{Exceedance probabilities}
 }
 \description{
-Calculate flow value that meets a given exceedance probability
+Calculate flow value that meet a vector of exceedance probabilities
 }
 \examples{
-exceedance_flow(runif(30, 0, 10000), 0.5)
+exceedance_flow(runif(30, 0, 10000), seq(0.1, 0.9, 0.1))
 
 }

@@ -6,6 +6,14 @@ R package with miscellaneous convenience functions used in projects at [ESA](htt
 
 ### Installation
 
+#### GitHub
+
+```
+remotes::install_github("EnvironmentalScienceAssociates/fulcrumr")
+```
+
+#### R-universe
+
 Enable repository.
 
 ```
